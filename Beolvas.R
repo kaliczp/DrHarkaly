@@ -1,4 +1,6 @@
+## Fájl beolvasása
 hark <- read.table("harkalyok.txt", sep = "\t", header = TRUE, dec = ",")
+## Ellenőrző ábrák
 plot(hark$gpszh, hark$gpssz)
 plot(gpssz ~ gpszh, hark)
 
