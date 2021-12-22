@@ -8,6 +8,8 @@ plot(gpssz ~ gpszh, hark)
 hark$eovy <- as.numeric(sub(" ", "", hark$eovy))
 hark$eovx <- as.numeric(sub(" ", "", hark$eovx))
 
+## Ellenőrző ábra
 plot(hark$eovy, hark$eovx, asp = TRUE)
 
+## Taxon rövidítések faktorosítása
 hark$faj <- factor(hark$faj)
